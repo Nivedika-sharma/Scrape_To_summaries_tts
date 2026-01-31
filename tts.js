@@ -14,7 +14,7 @@ const VOICE_ID = 'JBFqnCBsd6RMkjVDRZzb';
 
 export async function generateAudioFiles() {
   await fs.ensureDir(OUTPUT_DIR);
-
+  
   const products = await fs.readJson(INPUT_FILE);
 
   let index = 1;
