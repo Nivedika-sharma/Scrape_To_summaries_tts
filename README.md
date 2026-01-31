@@ -36,4 +36,31 @@ ELEVENLABS_API_KEY=your_elevenlabs_api_key`
 `node index.js`
 
 
-Scrapes products → generates summaries → creates audio files
+##Design Choices
+```
+        Scraping:
+
+        Used axios + cheerio
+
+        Targeted .search-cards for product name & description
+
+        Limited to first 5 products for efficiency
+
+        Summarization:
+
+        Used OpenAI GPT models (gpt-4o-mini primary, gpt-4o fallback)
+
+        Multi-model setup ensures reliability
+
+        Audio Generation:
+
+        Used ElevenLabs TTS
+
+        Each summary saved as a separate MP3 file
+
+        Workflow:
+
+        Scraper → JSON → OpenAI Summarizer → ElevenLabs TTS → Audio
+```
+
+
