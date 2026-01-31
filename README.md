@@ -1,5 +1,5 @@
 **Mamaearth Best Sellers Scraper & Audio Generator**
-**Overview**
+_**Overview**_
 
 Scrapes Best Sellers from Mamaearth (first 5 products only)
 
@@ -9,32 +9,31 @@ Converts summaries into MP3 audio files using ElevenLabs TTS
 
 
 
-**How to Run**
+_**How to Run**_
 
-Clone the repository
+1. Clone the repository
 
-git clone <your-repo-url>
-cd project-folder
+`git clone <your-repo-url>`
+`cd project-folder`
+ 
+2. Install dependencies
+
+`npm install @elevenlabs/elevenlabs-js
+npm install axios
+npm install cheerio 
+npm install fs-extra dotenv
+npm install openai 
+`
+
+3. Add API keys (create .env file in project root)
+
+`OPENAI_API_KEY=your_openai_api_key
+ELEVENLABS_API_KEY=your_elevenlabs_api_key`
 
 
-Install dependencies
+ 4. Run the script
 
-npm install
-
-
-Add API keys (create .env file in project root)
-
-OPENAI_API_KEY=your_openai_api_key
-ELEVENLABS_API_KEY=your_elevenlabs_api_key
-OPENAI_PRIMARY_MODEL=gpt-4o-mini
-OPENAI_FALLBACK_MODEL=gpt-4o
-
-
-
-
-Run the script
-
-node index.js
+`node index.js`
 
 
 Scrapes products → generates summaries → creates audio files
