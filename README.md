@@ -1,5 +1,5 @@
-**Mamaearth Best Sellers Scraper & Audio Generator**
-_**Overview**_
+#**Mamaearth Best Sellers Scraper & Audio Generator**
+##_**Overview**_
 
 Scrapes Best Sellers from Mamaearth (first 5 products only)
 
@@ -9,7 +9,7 @@ Converts summaries into MP3 audio files using ElevenLabs TTS
 
 
 
-_**How to Run**_
+##_**How to Run**_
 
 1. Clone the repository
 
