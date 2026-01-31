@@ -1,9 +1,7 @@
-
-
-
+#**Mamaearth Best Sellers Scraper & Audio Generator**
 ##_**Overview**_
 
-Scrapes Skin-care products from Mamaearth (first 5 products only)
+Scrapes Best Sellers from Mamaearth (first 5 products only)
 
 Generates short 1–2 sentence summaries using OpenAI GPT4.o models
 
@@ -27,11 +25,7 @@ npm install fs-extra dotenv
 npm install openai 
 `
 
----
-
-## 🔑 Setup API Keys
-
-Create a **.env** file in the root folder:
+3. Add API keys (create .env file in project root)
 
 `OPENAI_API_KEY=your_openai_api_key
 ELEVENLABS_API_KEY=your_elevenlabs_api_key`
