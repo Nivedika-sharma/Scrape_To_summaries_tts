@@ -42,7 +42,7 @@ async function generateSummaries() {
 
       product.summary = summary;
 
-      console.log("--", product.name);
+      //console.log("--", product.name);
     }
 
     await fs.writeJson(INPUT_FILE, products, { spaces: 2 });
