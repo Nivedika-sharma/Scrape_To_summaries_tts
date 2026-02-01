@@ -1,6 +1,7 @@
 import fs from 'fs-extra';
 import path from 'path';
 import { ElevenLabsClient,play } from '@elevenlabs/elevenlabs-js';
+import { arrayBuffer } from 'stream/consumers';
 
 const elevenlabs = new ElevenLabsClient({
   apiKey: process.env.ELEVENLABS_API_KEY, // or replace directly with key string
@@ -29,7 +30,9 @@ export async function generateAudioFiles() {
     });
 
     // audio is a Uint8Array / Buffer
-    await fs.writeFile(filePath, audio);
+    const arrayBuffer=await new Response(audio).arrayBuffer();
+
+    await fs.writeFile(filePath, Buffer.from(arrayBuffer));
 
     console.log(`product-${index}.mp3 created`);
     index++;
