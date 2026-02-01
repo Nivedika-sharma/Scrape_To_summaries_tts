@@ -25,7 +25,7 @@ export async function generateAudioFiles() {
 
     const audio = await elevenlabs.textToSpeech.convert(VOICE_ID, {
       text: product.summary,
-      modelId: 'eleven_v3',
+      modelId: 'eleven_multilingual_v2',
       outputFormat: 'mp3_44100_128',
     });
 
