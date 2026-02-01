@@ -4,7 +4,7 @@ import { ElevenLabsClient,play } from '@elevenlabs/elevenlabs-js';
 import { arrayBuffer } from 'stream/consumers';
 
 const elevenlabs = new ElevenLabsClient({
-  apiKey: process.env.ELEVENLABS_API_KEY, // or replace directly with key string
+  apiKey: process.env.ELEVENLABS_API_KEY, 
 });
 
 const INPUT_FILE = 'data/products.json';
