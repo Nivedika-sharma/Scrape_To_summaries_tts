@@ -1,0 +1,6 @@
+axios
+cheerio
+fs-extra
+dotenv
+openai
+@elevenlabs/elevenlabs-js
